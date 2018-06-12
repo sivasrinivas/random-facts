@@ -1,7 +1,10 @@
 {
 	"ImportPath": "github.com/sivasrinivas/random-facts",
 	"GoVersion": "go1.8",
-	"GodepVersion": "v74",
+	"GodepVersion": "v80",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/gin-contrib/sse",
