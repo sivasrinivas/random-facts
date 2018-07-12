@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!doctype html>\n<html lang=\"en\">\n<head>\n  <!-- Required meta tags -->\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\n  <!-- Bootstrap CSS -->\n  <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" integrity=\"sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB\" crossorigin=\"anonymous\">\n\n  <title>Random Facts</title>\n</head>\n<body>\n<app-facts></app-facts>\n\n<!-- Optional JavaScript -->\n<!-- jQuery first, then Popper.js, then Bootstrap JS -->\n<script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\" integrity=\"sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T\" crossorigin=\"anonymous\"></script>\n</body>\n</html>\n"
+module.exports = "<!doctype html>\n<html lang=\"en\">\n<head>\n  <!-- Required meta tags -->\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\n  <!-- Bootstrap CSS -->\n  <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" integrity=\"sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB\" crossorigin=\"anonymous\">\n\n  <title>Random Facts</title>\n</head>\n<body>\n<nav class=\"navbar navbar-expand-md navbar-dark bg-dark fixed-top\">\n  <a class=\"navbar-brand\" href=\"#\">Random Facts</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarsExampleDefault\" aria-controls=\"navbarsExampleDefault\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n</nav>\n<br><br><br><br>\n<main role=\"main\" class=\"container\">\n  <app-facts></app-facts>\n</main><!-- /.container -->\n\n<!-- Optional JavaScript -->\n<!-- jQuery first, then Popper.js, then Bootstrap JS -->\n<script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\" integrity=\"sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T\" crossorigin=\"anonymous\"></script>\n</body>\n</html>\n"
 
 /***/ }),
 
@@ -263,7 +263,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>My Random Facts</h2>\n  <div *ngFor=\"let fact of facts\">\n    <div class=\"col-md-4\">\n      <div class=\"card mb-4 box-shadow\">\n        <div class=\"card-body\">\n          <p>{{fact.fact}}</p>\n        </div>\n      </div>\n    </div>\n  </div>\n"
+module.exports = "<div *ngFor=\"let fact of facts\">\n  <div class=\"col-8 align-self-center\">\n    <div class=\"card mb-4 box-shadow\">\n      <div class=\"card-body\">\n        <p>{{fact.fact}}</p>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -328,14 +328,14 @@ var FactsComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FACTS", function() { return FACTS; });
 var FACTS = [
-    { id: 1, fact: 'Fact 1' },
-    { id: 2, fact: 'Fact 2' },
-    { id: 3, fact: 'Fact 3' },
-    { id: 4, fact: 'Fact 4' },
-    { id: 5, fact: 'Fact 5' },
-    { id: 6, fact: 'Fact 6' },
-    { id: 7, fact: 'Fact 7' },
-    { id: 8, fact: 'Fact 8' }
+    { id: 1, fact: 'India has a Bill of Rights for cows.' },
+    { id: 2, fact: 'Contrary to popular belief, opossums, squirrels, chipmunks, and mice do not carry rabies.' },
+    { id: 3, fact: 'Los Angeles\'s full name is \\"El Pueblo de Nuestra Senora la Reina de los Angeles de Porciuncula\\"!' },
+    { id: 4, fact: 'In 2003, the U.S. Government spent about $2,000,000.00 on potato research!' },
+    { id: 5, fact: 'It takes 492 seconds for sunlight to reach the Earth!' },
+    { id: 6, fact: 'The electric chair was invented by a dentist!' },
+    { id: 7, fact: 'A polar bear\'s skin is black. Its fur is not white, but actually clear.' },
+    { id: 8, fact: 'The first telephone book was one page long and had only 50 names in it.' }
 ];
 
 
