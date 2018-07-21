@@ -23,4 +23,8 @@ export class FactsComponent implements OnInit {
       .subscribe(facts => this.facts = facts);
   }
 
+  incLike(fact: Fact) {
+    fact.likes++;
+  }
+
 }

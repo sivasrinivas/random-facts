@@ -4,13 +4,11 @@ import {FormsModule} from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { FactsComponent } from './facts/facts.component';
-import { FactDetailComponent } from './fact-detail/fact-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FactsComponent,
-    FactDetailComponent
   ],
   imports: [
     BrowserModule,

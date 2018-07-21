@@ -1,4 +1,5 @@
 export class Fact {
   id: number;
-  fact:string;
+  fact: string;
+  likes: number;
 }
